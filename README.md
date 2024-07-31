@@ -17,7 +17,9 @@ To implement the backend for the Daily Expenses Sharing Application in Java usin
 #### 6.Data Validation: Ensure proper input validation.
 
 ## Project Structure
-![Screenshot (49)](https://github.com/user-attachments/assets/6b69ae26-1ff8-443d-b934-5b6aee20a077)
+![image](https://github.com/user-attachments/assets/bb5e20dd-9ac3-43e1-ab14-37a0f354aaf8)
+
+
 
 ## Step-by-Step Implementation
 
@@ -29,5 +31,22 @@ Create a Spring Boot project with dependencies for JPA, Web, and Lombok. go to h
 Create User Model and User Service
 Use Login feature with jwt authentication
 
-<img  href="![Screenshot (43)](https://github.com/user-attachments/assets/ba0d1163-8606-47a1-87b2-016fc9f9e3ba)
-"/>
+![image](https://github.com/user-attachments/assets/37b1f51b-1751-43ec-a884-934fc7007dac)
+
+#### Create User:
+Endpoint: POST (http://localhost:8080/public/user/register)
+ ![image](https://github.com/user-attachments/assets/da4f7662-b20d-4129-94a5-4c7f1337dea4)
+
+This endpoint creates a new user in the system.
+
+#### 3. Expense Management
+Create Expense Model and Expense Service
+Create Participnt Model and it service
+![image](https://github.com/user-attachments/assets/7818b1aa-51cd-44a9-91ac-f6d58f7e809a)
+
+#### 4. Balance Sheet Generation
+   ###### Download Balance Sheet:
+    Endpoint: GET /api/balance-sheet/{expenseId}?format={csv|pdf}
+    This endpoint generates and downloads the balance sheet for a specific user in the requested format (CSV or PDF).
+![image](https://github.com/user-attachments/assets/802565d4-e6bf-4849-beb2-903a3e15e8df)
+
